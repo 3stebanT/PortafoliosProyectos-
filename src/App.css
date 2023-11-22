@@ -1,0 +1,85 @@
+.app-header {
+    display: flex; /* Utiliza un diseño flexible (flexbox) para el encabezado. */
+    justify-content: space-between; /* Espacia los elementos del encabezado uniformemente. */
+    align-items: center; /* Centra verticalmente los elementos en el encabezado. */
+    padding: 1rem; /* Agrega relleno al encabezado. */
+    width: 100%;
+  }
+  
+  .app-header nav a {
+    margin: 0 1.0rem; /* Agrega márgenes a los elementos del menú de navegación. */
+    color: black; /* Establece el color del texto en blanco. */
+    text-decoration: none; /* Quita la decoración de subrayado de los hipervínculos. */
+    position: relative; /* Añadimos una posición relativa para permitir el estilo de la línea debajo. */
+  }
+
+  /* Estilos para los elementos específicos cuando se pasa el cursor sobre ellos */
+.app-header nav a:hover {
+    color: #F1C40F; /* Cambia el color del texto al pasar el cursor sobre el elemento. */
+  }
+
+  /* Línea debajo del elemento cuando se pasa el cursor sobre él */
+.app-header nav a:hover::after {
+    content: ''; /* Agregamos contenido al elemento generado (::after) para crear la línea. */
+    position: absolute;
+    left: 0;
+    bottom: -6px; /* Ajusta la posición de la línea debajo del texto. */
+    width: 100%;
+    height: 2px; /* Establece la altura de la línea. */
+    background: #F1C40F; /* Cambia el color de la línea al pasar el cursor sobre el elemento. */
+  }
+  
+  .slide {
+    width: 100%; /* Establece el ancho de cada diapositiva al 100%. */
+    transition: all 0.3s; /* Agrega una transición suave para las diapositivas. */
+  }
+  
+  .slide img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100%. */
+  }
+  .separator {
+    border-left: 1px solid rgb(206, 196, 196) ; /* Crea una línea vertical sólida de 1 píxel de grosor y color blanco. */
+    height: 1.5rem; /* Establece la altura de la línea vertical. Puedes ajustarla según tus necesidades. */
+    display: inline-block; /* Hace que la línea sea un elemento en línea en lugar de un bloque. */
+    margin: 0.5 0.5rem; /* Agrega espacio a ambos lados de la línea. Puedes ajustar el valor según desees. */
+    vertical-align: middle; /* Alinea verticalmente la línea con los elementos circundantes. */
+  }
+ 
+
+
+  .app-header .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-header .menu-toggle {
+    display: none; /* Inicialmente, ocultar el botón de menú en pantallas grandes. */
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .app-header .menu-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .app-header .menu-toggle {
+      display: block; /* Mostrar el botón de menú en pantallas más pequeñas. */
+    }
+  
+    .app-header .menu-links {
+      display: none; /* Ocultar los enlaces del menú en pantallas más pequeñas. */
+    }
+  
+    .app-header .menu-links.active {
+      display: flex; /* Mostrar los enlaces del menú cuando el menú está activo en pantallas más pequeñas. */
+    }
+  }
+  
+  
+  
+  
+  
+  

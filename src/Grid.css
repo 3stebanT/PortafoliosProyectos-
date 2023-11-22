@@ -1,0 +1,97 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  padding: 0px;
+  text-align: center;
+  
+}
+.cell-1-4 {
+  grid-row: 1 / span 2; /* Fusiona dos filas */
+  grid-column: 1 / 2; /* Fusiona dos columnas */
+
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ancho de tu imagen */
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%; /* La imagen ocupará todo el alto del contenedor */
+  object-fit: cover; /* Para mantener la proporción y recortar si es necesario */
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Color del texto */
+}
+
+.text1 {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.text2 {
+  margin: 10px;
+  color: rgb(184, 179, 179) ;
+}
+
+.link {
+ margin: 10px;
+  color:#F39C12; /* Color del hipervínculo */
+}
+.image-container1 {
+  position: relative;
+  width: 100%; /* Ancho de tu imagen */
+  height: 100%;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 34%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Color del texto */
+}
+
+.text11{
+  color:rgb(137, 127, 141);
+  font-size: 40px;
+  font-weight: bold;
+}
+.text21{
+  font-size: 20px;
+  margin: 10px;
+  color: rgb(184, 179, 179) ;
+}
+
+.link1 {
+  margin: 20px;
+  color:#F39C12; 
+}

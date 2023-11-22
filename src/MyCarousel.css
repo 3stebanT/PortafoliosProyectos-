@@ -1,0 +1,80 @@
+
+.carousel-item {
+    position: relative;
+    text-align: left;
+    width: 100%; /* Establece el ancho del ítem al 100% del contenedor. */
+    overflow: hidden; /* Esconde cualquier contenido que se desborde. */
+    height: 400px; /* Define una altura específica para el ítem. Ajusta según tus preferencias. */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del ítem. */
+    object-fit: cover; /* Asegura que la imagen cubra el ítem sin estirarse o deformarse. */
+    height: 100%; /* Establece que la imagen ocupe toda la altura definida para el ítem. */
+  }
+
+.carousel-content {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el contenido en la imagen. */
+    right: 290px; /* Ajusta el espacio desde la derecha según tus necesidades. */
+    transform: translateY(-50%); /* Alinea verticalmente el contenido. */
+    padding: 20px;
+  }
+.carousel-content h2 {
+    color:   #F39C12; 
+    height: 2.6rem;        /*espacio hacia abajo*/
+    
+
+  }
+  .carousel-content .thin-font{
+    color:   rgb(126, 117, 117); 
+    height: 2.5rem;        /*espacio hacia abajo*/
+  }
+  .carousel-content h1 {
+    color:   white; 
+    height: 5rem;          /*espacio hacia abajo*/
+    
+    
+  }
+
+.carousel-content button{  /*tamaño y color del boton*/
+    width: 8rem;
+    height: 2.5rem;                    
+    border: none; 
+}
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .carousel-controls svg {
+    font-size: 24px; /* Tamaño de los iconos */
+    color: #333; /* Color de los iconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los iconos para indicar que son clicables. */
+  }
+
+  .color-change-button {
+    background-color: #F1C40F ;
+    color: white; 
+    border-radius: 3px;
+    cursor: pointer;  /*Para cuando el cursor se pase por encima del boton*/
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de color */
+    font-weight: 700; /* Equivalente a "bold" */
+
+    /* Estilo al pasar el cursor sobre el botón */
+    &:hover {
+      background-color: #ff8800; /* Nuevo color de fondo al pasar el cursor */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+

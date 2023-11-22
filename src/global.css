@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
+  }
+  .thin-font {
+    font-weight: 100; /* Cambia el valor según la delgadez deseada */ 
+  }
+  .blur-image {
+    
+    opacity: 0.9; /* Ajusta la opacidad según tu preferencia (1 es totalmente visible, 0 es totalmente transparente) */
+  }
+
+  

@@ -1,0 +1,112 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas de tamaño igual */
+    gap: 2px; /* Espacio entre elementos */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+/* Estilos para el contenedor del título y los elementos h3 */
+.title-container {
+    display: flex; /* Disposición en línea */
+    justify-content: space-between; /* Alineación a la izquierda y derecha */
+    align-items: center; /* Alineación vertical centrada */
+    grid-column: 1 / -1; /* Se extiende a través de todas las columnas */
+    margin-bottom: 10px; /* Espaciado abajo */
+    
+  }
+  
+  .grid-title {
+    margin: 0; /* Elimina el margen predeterminado del título */
+    text-align: left; /* Alineación a la izquierda */
+  }
+  
+  /* Estilos para el contenedor de los dos títulos en la derecha */
+  .h3-container {
+    display: flex; /* Disposición en línea */
+    gap: 20px; /* Espacio entre los elementos h3 */
+    align-items: center; /* Alineación vertical centrada */
+  }
+  
+  .grid-title:hover {
+    color: #F1C40F; /* Cambia el color de texto al pasar el cursor */
+    border-bottom: 2px solid #F1C40F; /* Aparece una línea naranja debajo */
+  }
+
+/* Estilos para los elementos h3 en la derecha */
+.grid-h3 {
+  margin: 0;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+  color: #BFC8CD;
+  border-bottom: 2px solid transparent;
+}
+
+/* Estilos para los elementos h3 cuando se pasa el cursor por encima */
+.grid-h3:hover {
+  color: #F1C40F;
+  border-bottom: 2px solid #F1C40F;
+}
+  
+  .grid-item {
+    border: 1px solid #dddada;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+  }
+  /* Estilos para el contenedor del contenido de cada elemento */
+.grid-content {
+    display: flex; /* Disposición en línea */
+    align-items: center; /* Centrar verticalmente el contenido */
+  }
+  
+  /* Estilos para la imagen */
+  .grid-image img {
+    max-width: 100px; /* Ancho máximo de la imagen */
+    height: 150px; 
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+  }
+  
+  /* Estilos para los detalles (puntuación, descripción y precio) */
+  .grid-details {
+    display: flex; /* Disposición en línea */
+  }
+  
+  /* Estilos para la puntuación con estrellas */
+  .grid-rating {
+    display: flex; /* Disposición en línea */
+    height: 40px; 
+  }
+
+  /* Estilos para la descripción del producto */
+  .grid-description1 {
+    font-weight: 100; /* Cambia el valor según la delgadez deseada */ 
+    height: 10px; 
+  }
+  
+  /* Estilos para la descripción del producto */
+  .grid-description {
+    font-weight: 100; /* Cambia el valor según la delgadez deseada */ 
+    margin-right: 60px;
+    
+  }
+  
+  /* Estilos para el precio del producto */
+  
+  .grid-price{
+    height: 50px; 
+    margin-top:20px;
+    margin-right: 83px;
+  }
+
+  .star-filled {
+    color: #FFD700; /* Color de las estrellas llenas (amarillo en este caso) */
+  }
+  
+  .star-empty {
+    color: #2b2929; /* Color de las estrellas vacías*/
+  }

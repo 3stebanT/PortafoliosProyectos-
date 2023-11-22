@@ -1,0 +1,39 @@
+.grir-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define las 3 columnas */
+    gap: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 8%;
+  }
+  
+  .cel {
+    border: none;
+    padding: 10px;
+  }
+    
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    font-size: 40px; /* Tamaño del ícono */
+    margin-right: 30px; /* Espacio entre el ícono y el texto */
+    color:#AAB3B8 ;
+  
+  }
+  .icons a i:hover {
+    color:#F1C40F; /* Cambia el color al pasar el cursor sobre el ícono */
+  }
+
+  .title {
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 5px;
+    color: #AAB3B8;
+  }
+  
